@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct NavigationDetailItemView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    let url: String?
+        
+        var body: some View {
+            WebView(urlString: url)
+        }
 }
 
 #Preview {
-    NavigationDetailItemView()
+    NavigationDetailItemView(url: "https://www.google.com")
 }

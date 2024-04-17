@@ -5,14 +5,25 @@
 //  Created by Юлія Воробей on 17.04.2024.
 //
 
+import Foundation
+import WebKit
 import SwiftUI
 
-struct WebView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct WebView: UIViewRepresentable {
+    
+    let urlString: String?
+    
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
     }
-}
-
-#Preview {
-    WebView()
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        if let safeString = urlString {
+            if let url = URL(string: safeString) {
+                let request = URLRequest(url: url)
+                uiView.load(request)
+            }
+        }
+    }
+    
 }

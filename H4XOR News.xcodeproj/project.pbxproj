@@ -11,6 +11,12 @@
 		51592F372BCFF33D00BD734D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F362BCFF33D00BD734D /* ContentView.swift */; };
 		51592F392BCFF33F00BD734D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51592F382BCFF33F00BD734D /* Assets.xcassets */; };
 		51592F3C2BCFF33F00BD734D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51592F3B2BCFF33F00BD734D /* Preview Assets.xcassets */; };
+		51592F452BCFFB9D00BD734D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F442BCFFB9D00BD734D /* NetworkManager.swift */; };
+		51592F472BCFFC7000BD734D /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F462BCFFC7000BD734D /* PostData.swift */; };
+		51592F4B2BD0036700BD734D /* NavigationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F4A2BD0036700BD734D /* NavigationItemView.swift */; };
+		51592F4D2BD04FE100BD734D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51592F4C2BD04FE100BD734D /* Launch Screen.storyboard */; };
+		51592F502BD05E3600BD734D /* NavigationDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F4F2BD05E3600BD734D /* NavigationDetailItemView.swift */; };
+		51592F522BD05EAB00BD734D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51592F512BD05EAB00BD734D /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		51592F362BCFF33D00BD734D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51592F382BCFF33F00BD734D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51592F3B2BCFF33F00BD734D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51592F442BCFFB9D00BD734D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		51592F462BCFFC7000BD734D /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		51592F4A2BD0036700BD734D /* NavigationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemView.swift; sourceTree = "<group>"; };
+		51592F4C2BD04FE100BD734D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		51592F4E2BD0529F00BD734D /* H4XOR-News-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "H4XOR-News-Info.plist"; sourceTree = SOURCE_ROOT; };
+		51592F4F2BD05E3600BD734D /* NavigationDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetailItemView.swift; sourceTree = "<group>"; };
+		51592F512BD05EAB00BD734D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,10 @@
 		51592F332BCFF33D00BD734D /* H4XOR News */ = {
 			isa = PBXGroup;
 			children = (
+				51592F4E2BD0529F00BD734D /* H4XOR-News-Info.plist */,
 				51592F342BCFF33D00BD734D /* H4XOR_NewsApp.swift */,
-				51592F362BCFF33D00BD734D /* ContentView.swift */,
+				51592F432BCFFA5800BD734D /* Models */,
+				51592F422BCFFA4200BD734D /* Views */,
 				51592F382BCFF33F00BD734D /* Assets.xcassets */,
 				51592F3A2BCFF33F00BD734D /* Preview Content */,
 			);
@@ -65,6 +80,27 @@
 				51592F3B2BCFF33F00BD734D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51592F422BCFFA4200BD734D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51592F362BCFF33D00BD734D /* ContentView.swift */,
+				51592F4A2BD0036700BD734D /* NavigationItemView.swift */,
+				51592F4C2BD04FE100BD734D /* Launch Screen.storyboard */,
+				51592F4F2BD05E3600BD734D /* NavigationDetailItemView.swift */,
+				51592F512BD05EAB00BD734D /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51592F432BCFFA5800BD734D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51592F442BCFFB9D00BD734D /* NetworkManager.swift */,
+				51592F462BCFFC7000BD734D /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51592F4D2BD04FE100BD734D /* Launch Screen.storyboard in Resources */,
 				51592F3C2BCFF33F00BD734D /* Preview Assets.xcassets in Resources */,
 				51592F392BCFF33F00BD734D /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51592F452BCFFB9D00BD734D /* NetworkManager.swift in Sources */,
+				51592F472BCFFC7000BD734D /* PostData.swift in Sources */,
 				51592F372BCFF33D00BD734D /* ContentView.swift in Sources */,
 				51592F352BCFF33D00BD734D /* H4XOR_NewsApp.swift in Sources */,
+				51592F502BD05E3600BD734D /* NavigationDetailItemView.swift in Sources */,
+				51592F4B2BD0036700BD734D /* NavigationItemView.swift in Sources */,
+				51592F522BD05EAB00BD734D /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +317,10 @@
 				DEVELOPMENT_TEAM = 9UQV5AUAXV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +347,10 @@
 				DEVELOPMENT_TEAM = 9UQV5AUAXV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
